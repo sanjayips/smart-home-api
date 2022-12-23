@@ -1,0 +1,26 @@
+[
+  {
+    "pinId": 4,
+    "pinName": "D2",
+    "relatedManualPin": 10,
+    "relatedManualPinName": "SD3"
+  },
+  {
+    "pinId": 5,
+    "pinName": "D1",
+    "relatedManualPin": 0,
+    "relatedManualPinName": "D1"
+  },
+  {
+    "pinId": 14,
+    "pinName": "D5",
+    "relatedManualPin": 13,
+    "relatedManualPinName": "D2"
+  },
+  {
+    "pinId": 16,
+    "pinName": "D0",
+    "relatedManualPin": 3,
+    "relatedManualPinName": "D5"
+  }
+]
