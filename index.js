@@ -5,6 +5,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import { Server } from "socket.io";
 import http from "http";
+import cors from "cors";
 
 dotenv.config();
 const app = express();
