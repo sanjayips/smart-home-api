@@ -46,17 +46,17 @@ io.on("connection", (socket) => {
   });
 });
 
-mongoose.connect(
-  process.env.DB_CON_STRING,
-  { useNewUrlParser: true },
-  (err) => {
-    if (err) {
-      console.log(err);
-    } else {
-      console.log("Successfully Connected to the database");
-    }
+const MONGOURL =
+  process.env.DB_CON_STRING ||
+  "mongodb+srv://sanjay:h5sypgEvWLd5hLRP@cluster0.u7g40.mongodb.net/?retryWrites=true&w=majority";
+console.log("MONGOURL: ", MONGOURL);
+mongoose.connect(MONGOURL, { useNewUrlParser: true }, (err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Successfully Connected to the database");
   }
-);
+});
 
 httpServer.listen(PORT, () => {
   console.log("Running on : ", httpServer.address());
